@@ -30,12 +30,10 @@ const SideBar = () => {
         <div class="nav-main-section-inner-container">
           <ul class="nav-main-section-links">
             <li class="nav-main-section-link">
-              <a href="#" class="nav-main-section-link-a">
                 <span class="link-container">
                   <span class="nav-link-icon"><BsPersonCircle/></span>
                   <span class="nav-link-text">My Channel</span>
                 </span>
-              </a>
             </li>
           </ul>
         </div>
