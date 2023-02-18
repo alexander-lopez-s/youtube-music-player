@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { TbSearch } from 'react-icons/tb';
-import SideBar from "./SideBar";
 
 
 const YoutubeFetch = () => {
