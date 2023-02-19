@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { TbSearch } from 'react-icons/tb';
+import ReactPlayer from 'react-player/lazy'
 
 
 const YoutubeFetch = () => {
@@ -14,7 +15,7 @@ const YoutubeFetch = () => {
     async function handleSubmit() {
         await axios
             .get(
-                `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${search}&type=video&key=AIzaSyA8vTOkffJr6P2IteJovvbVPN8Dff9aur0`
+                `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=8&q=${search}&type=video&key=AIzaSyCGK_NE0PeAyDgtvYUD3NvbVadi3-1UskU`
             )
             .then((res) => {
                 setData(res.data.items);
@@ -24,7 +25,7 @@ const YoutubeFetch = () => {
 
     useEffect(() => {
         handleSubmit();
-    }, []);  // eslint-disable-line react-hooks/exhaustive-deps
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 
     return (
@@ -37,8 +38,15 @@ const YoutubeFetch = () => {
             </div>
            <div className="videos-gallery">
             {data.map((video) => (
-                <div className="pl-item" key={video.id}>
-                    <iframe title={video.snippet.title} width="278" height="156" src={`https://www.youtube.com/embed/${video.id.videoId}`} frameBorder="0" gesture="media" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                <div className="iframe-container" key={video.id}>
+                    <ReactPlayer 
+                    url={`https://www.youtube.com/embed/${video.id.videoId}`} 
+                    playing
+                    controls
+                    light = {`${video.snippet.thumbnails.medium.url}`}
+                    width={330}
+                    height={190}
+                   />
                     <h5>{video.snippet.title}</h5>
                 </div>
             ))}

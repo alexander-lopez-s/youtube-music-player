@@ -9,322 +9,41 @@ import { FcReddit } from 'react-icons/fc';
 const SideBar = () => {
 
     return (
-    <>
-    <div class="nav-outer-container">
-  <div class="nav-content-container">
-    <ul class="nav-main-sections-container">
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><AiFillHome/></span>
-                  <span class="nav-link-text">Home</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-       <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><BsPersonCircle/></span>
-                  <span class="nav-link-text">My Channel</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><HiTrendingUp/></span>
-                  <span class="nav-link-text">Trending</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><MdCardMembership/></span>
-                  <span class="nav-link-text">Subscriptions
-                  </span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-        <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><MdHistory/></span>
-                  <span class="nav-link-text">History</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-        <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><MdOutlineWatchLater/></span>
-                  <span class="nav-link-text">Watch Later</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-    </ul>
-    
-    <hr />
-    
-    <ul class="nav-main-sections-container">
-      
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <h3 class="nav-main-section-header">
-          </h3>
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-ios-paper icon"></i></span>
-                  <span class="nav-link-text">Study mix</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-       <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-ios-paper icon"></i></span>
-                  <span class="nav-link-text">Running tunes</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-ios-paper icon"></i></span>
-                  <span class="nav-link-text">Evening/Chill</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-       <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-thumbsup icon"></i></span>
-                  <span class="nav-link-text">Liked videos</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-    </ul>
-    
-    <hr />
-    
-    <ul class="nav-main-sections-container">
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <h3 class="nav-main-section-header">
-          </h3>
-          <ul class="nav-main-section-links">
+        <>
+            <div className="nav-outer-container">
+                <ul>
+                    <li><AiFillHome />Home</li>
+                    <li><BsPersonCircle />My Channel</li>
+                    <li><HiTrendingUp />Trending</li>
+                    <li><MdCardMembership />Subscriptions</li>
+                    <li><MdHistory />History</li>
+                    <li><MdOutlineWatchLater />Trending</li>
+                    <li><HiTrendingUp />Watch Later</li>
+                </ul>
+                <hr />
 
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-<FcReddit/>                  
-</span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">8</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers"></span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers"></span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">5</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">17</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">12</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">3</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">25</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">7</span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers"></span>
-                  </span>
-                </span>
-            </li>
-            
-                <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-img">
-                  <FcReddit/>                  
-                  </span>
-                  <span class="nav-link-text">Cat-Lyfe
-                    <span class="nav-link-numbers">2</span>
-                  </span>
-                </span>
-            </li>
-  
-          </ul>
-        </div>
-      </li>
-      
-    </ul>
-        
-    <hr />
-    
-     <ul class="nav-main-sections-container">
-      
-      <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-ios-plus icon"></i></span>
-                  <span class="nav-link-text">Browse Channels</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-       <li class="nav-main-section">
-        <div class="nav-main-section-inner-container">
-          <ul class="nav-main-section-links">
-            <li class="nav-main-section-link">
-                <span class="link-container">
-                  <span class="nav-link-icon"><i class="ion-ios-gear icon"></i></span>
-                  <span class="nav-link-text">Manage Subscriptions</span>
-                </span>
-            </li>
-          </ul>
-        </div>
-      </li>
-      
-    </ul>
-    
-  </div>
-</div>
-</>
+                <ul>
+                    <li>Piano mix</li>
+                    <li>Cardio tunes</li>
+                    <li>Sunday morning</li>
+                    <li>Liked videos</li>
+                    <li>Running tunes</li>
+                </ul>
+                <hr />
+                <ul>
+                    <li><FcReddit /> Metal bands </li>
+                    <li><FcReddit /> Haggard Official </li>
+                    <li><FcReddit /> Sergey Nevone </li>
+                    <li><FcReddit /> Belgium Got Talent </li>
+                    <li><FcReddit /> David Guetta </li>
+                </ul>
+                <hr />
+                <ul>
+                    <li> Browse channels </li>
+                    <li>Manage Subscriptions</li>
+                </ul>
+            </div>
+        </>
     )
 }
 
