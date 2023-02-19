@@ -5,6 +5,12 @@ import { MdCardMembership } from 'react-icons/md';
 import { MdHistory } from 'react-icons/md';
 import { MdOutlineWatchLater } from 'react-icons/md';
 import { FcReddit } from 'react-icons/fc';
+import { FcMusic } from 'react-icons/fc';
+import { FcSportsMode } from 'react-icons/fc';
+import { FcBriefcase } from 'react-icons/fc';
+import { FcFactory } from 'react-icons/fc';
+import { FcVlc } from 'react-icons/fc';
+import { FcNightLandscape } from 'react-icons/fc';
 
 const SideBar = () => {
 
@@ -12,22 +18,23 @@ const SideBar = () => {
         <>
             <div className="nav-outer-container">
                 <ul>
-                    <li><AiFillHome />Home</li>
-                    <li><BsPersonCircle />My Channel</li>
-                    <li><HiTrendingUp />Trending</li>
-                    <li><MdCardMembership />Subscriptions</li>
-                    <li><MdHistory />History</li>
-                    <li><MdOutlineWatchLater />Trending</li>
-                    <li><HiTrendingUp />Watch Later</li>
+                    <li><AiFillHome /> Home</li>
+                    <li><BsPersonCircle /> My Channel</li>
+                    <li><HiTrendingUp /> Trending</li>
+                    <li><MdCardMembership /> Subscriptions</li>
+                    <li><MdHistory /> History</li>
+                    <li><MdOutlineWatchLater /> Trending</li>
+                    <li><HiTrendingUp /> Watch Later</li>
                 </ul>
                 <hr />
 
                 <ul>
-                    <li>Piano mix</li>
-                    <li>Cardio tunes</li>
-                    <li>Sunday morning</li>
-                    <li>Liked videos</li>
-                    <li>Running tunes</li>
+                    <li><FcMusic /> Piano mix</li>
+                    <li><FcSportsMode /> Cardio tunes</li>
+                    <li><FcBriefcase /> Sunday morning</li>
+                    <li><FcVlc /> Random videos</li>
+                    <li><FcFactory /> Work mode</li>
+                    <li><FcNightLandscape/> Sleep time</li>
                 </ul>
                 <hr />
                 <ul>
@@ -40,7 +47,7 @@ const SideBar = () => {
                 <hr />
                 <ul>
                     <li> Browse channels </li>
-                    <li>Manage Subscriptions</li>
+                    <li> Manage Subscriptions</li>
                 </ul>
             </div>
         </>
